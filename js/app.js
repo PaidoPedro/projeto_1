@@ -142,19 +142,19 @@ function aplicarMascaras() {
     document.getElementById("cep");
 
     if (cpf) {
-        Inputmask(
+        new Inputmask(
             "999.999.999-99"
         ).mask(cpf);
     }
 
     if (telefone) {
-        Inputmask(
+        new Inputmask(
             "(99)99999-9999"
         ).mask(telefone);
     }
 
     if (cep) {
-        Inputmask(
+        new Inputmask(
             "99999-999"
         ).mask(cep);
     }
