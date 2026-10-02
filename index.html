@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./CSS/styles.css">
+
+    <title>ONG - Transformando o mundo</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#/inicio"><img class="logo" src="./img/logo.png" alt="Transformando o mundo!">
+            </a>
+
+            <input type="checkbox" id="menu-mobile">
+
+            <label for="menu-mobile" class="hamburguer" aria-label="Abrir ou fechar menu">
+                ≡
+            </label>
+
+            <nav aria-label="Menu principal">
+                <ul class="menu">
+                    <li class="dropdown">
+                        <a href="#/inicio">Início</a>
+
+                        <ul class="submenu">
+                            <li>
+                                <a href="#/inicio?secao=missao">
+                                    Missão
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#/inicio?secao=visao">
+                                    Visão
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#/inicio?secao=valores">
+                                    Valores
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#/projetos">Projetos</a>
+
+                        <ul class="submenu">
+                            <li>
+                                <a href="#/projetos?secao=edu">
+                                    Educação
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#/projetos?secao=capacitacao">
+                                    Capacitação
+                                </a>
+
+                                <li>
+                                    <a href="#/projetos?secao=voluntariado">
+                                        Voluntariado
+                                    </a>
+                                </li>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#/cadastro">Cadastre-se</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- O JavaScript colocará as páginas aqui -->
+        <div id="app"></div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>
+                &copy; 2026, ONG site. Todos os direitos reservados.
+            </p>
+
+            <address>
+                <h3>Contato</h3>
+
+                <p>
+                    E-mail: contato@exemplo.org.br
+                </p>
+                <p>
+                    Telefone: (21) 99999-9999
+                </p>
+
+                <p>
+                    Endereço: Rua Exemplo, 100 - Rio de Janeiro/RJ
+                </p>
+            </address>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+
+    <script src="https://unpkg.com/inputmask@5.0.8/dist/inputmask.min.js"></script>
+    <script type="module" src="./js/app.js"></script>
+</body>
+
+</html>
