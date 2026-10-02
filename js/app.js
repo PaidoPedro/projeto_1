@@ -15,6 +15,8 @@ function salvarCadastro(dados) {
         "cadastrosONG",
         JSON.stringify(cadastros)
     );
+
+    console.log('Total de registros:', cadastros.length);
 }
 
 function obterCadastros() {
